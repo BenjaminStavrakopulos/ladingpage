@@ -189,7 +189,21 @@ body {
 .contenido-acerca.flexible .derecha {
   text-align: right;
 }
+.certificados-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
 
+.certificados-galeria img {
+  max-width: 100%;
+  height: auto;
+  width: 250px; /* Puedes ajustar esto */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 @media (max-width: 768px) {
   .contenido-acerca.flexible {
     flex-direction: column;
@@ -227,4 +241,9 @@ body {
 .whatsapp-float img {
   width: 40px;
   height: 40px;
+}
+@media (max-width: 600px) {
+  .certificados-galeria img {
+    width: 90%;
+  }
 }
