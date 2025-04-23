@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .collapsible-section {
+    margin: 20px;
+    background-color:git status
+    white;
+    border-radius: 8px;
+  }
+  
+  .collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 4px solid #2d1add;
+    cursor: pointer;
+  }
+  
+  .collapsible-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  
+  .collapsible-content {
+    display: block;
+    padding: 10px 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .divider {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .linea-con-texto {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .linea-con-texto::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background-color: #004080;
+    z-index: 1;
+  }
+  
+  .linea-con-texto span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  .acerca-de-mi {
+    background-image: url('./imag/fondo.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 0 20px 40px;
+    color: #000;
+    position: relative;
+  }
+  
+  .linea-con-texto {
+    position: relative;
+    height: 20px; /* altura total más alta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004080;
+  }
+  
+  .linea-con-texto::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background-color: #004080;
+    z-index: 1;
+  }
+  
+  .linea-con-texto span {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #004080;
+    z-index: 2;
+  }
+  
+  /* SOLO para la sección que usa columnas */
+.contenido-acerca.flexible {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.contenido-acerca.flexible .columna {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contenido-acerca.flexible .izquierda {
+  text-align: left;
+}
+
+.contenido-acerca.flexible .derecha {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .contenido-acerca.flexible {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    
+  }
+
+  .contenido-acerca.flexible .derecha {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .linea-con-texto span {
+    font-size: 1.2rem; /* Reduce tamaño del texto en móviles */
+    padding: 5px;
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 1000;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
